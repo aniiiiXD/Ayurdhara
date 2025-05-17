@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+:root {
+  --primary: #2C5282;
+  --primary-light: #3B82F6;
+  --secondary: #2D6A4F;
+  --secondary-light: #65B891;
+  --accent: #F59E0B;
+  --warning: #F97316;
+  --error: #DC2626;
+  --success: #10B981;
+  --background: #F9FAFB;
+  --text: #1F2937;
+  --text-light: #4B5563;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+.slide-in {
+  animation: slideIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Button styles */
+.btn {
+  @apply px-4 py-2 rounded-md font-medium transition-all duration-200 inline-flex items-center justify-center;
+}
+
+.btn-primary {
+  @apply bg-blue-700 text-white hover:bg-blue-800 focus:ring-2 focus:ring-blue-300;
+}
+
+.btn-secondary {
+  @apply bg-green-700 text-white hover:bg-green-800 focus:ring-2 focus:ring-green-300;
+}
+
+.btn-outline {
+  @apply border border-blue-700 text-blue-700 hover:bg-blue-50 focus:ring-2 focus:ring-blue-300;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden;
+}
+
+/* Input styles */
+.input {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500;
+}
+
+/* Container styles */
+.container-custom {
+  @apply px-4 mx-auto max-w-7xl sm:px-6 lg:px-8;
+}
