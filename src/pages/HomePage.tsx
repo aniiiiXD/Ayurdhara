@@ -91,7 +91,7 @@ const HomePage = () => {
       <section className="py-10 sm:py-12 md:py-16 bg-white">
         <div className="container-custom px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 font-heading">Why Choose Mr Health?</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 font-heading">Why Choose AyurDhara?</h2>
             <p className="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">We provide comprehensive healthcare solutions connecting patients with the right medical professionals and resources.</p>
           </div>
           
