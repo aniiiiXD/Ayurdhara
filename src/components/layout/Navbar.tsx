@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import Logo from '../ui/Logo';
 import { useAuth } from '../../contexts/AuthContext';
 
 interface NavbarProps {
   transparent?: boolean;
-}
+} 
 
 const Navbar: React.FC<NavbarProps> = ({ transparent = false }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,10 +26,10 @@ const Navbar: React.FC<NavbarProps> = ({ transparent = false }) => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${getNavbarClass()}`}>
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0">
-              <Logo variant={transparent ? 'light' : 'dark'} />
-            </Link>
+          <div className="flex items-center select-none">
+            <span className="text-2xl font-bold tracking-wide text-white font-serif drop-shadow-sm">
+              AYURDHARA
+            </span>
           </div>
           
           {/* Desktop navigation */}

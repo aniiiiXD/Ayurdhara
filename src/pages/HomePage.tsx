@@ -24,7 +24,7 @@ const HomePage = () => {
         
         <div className="container-custom h-full flex flex-col justify-center items-center text-white text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 font-heading animate-fade-in">
-            Welcome to <span className="text-blue-400">mr</span> Health Platform
+            Welcome to <span className="text-blue-400">Ayurdhara</span> 
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mb-10 animate-slide-in">
             Connecting patients with the right healthcare professionals for better wellness and care.
