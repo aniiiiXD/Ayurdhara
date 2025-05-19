@@ -49,7 +49,7 @@ const Navbar: React.FC<NavbarProps> = ({ transparent = false }) => {
           {/* Desktop navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-4">
-              {user ? (
+              {user ? ( 
                 <>
                   <span className="px-3 py-2">Welcome, {user.name}</span>
                   <button
@@ -61,6 +61,14 @@ const Navbar: React.FC<NavbarProps> = ({ transparent = false }) => {
                 </>
               ) : (
                 <>
+                  <Link 
+                    to="/registration" 
+                    className={`px-4 py-2 rounded-md text-sm font-medium hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-white ${
+                      isActive('/login/patient') ? 'font-bold' : ''
+                    }`}
+                  >
+                    Doctor Reg.
+                  </Link>
                   <Link 
                     to="/login/patient" 
                     className={`px-4 py-2 rounded-md text-sm font-medium hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-white ${

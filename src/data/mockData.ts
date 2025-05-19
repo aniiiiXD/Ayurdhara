@@ -3,7 +3,7 @@
 // Doctors data
 export const doctors = [
   {
-    id: 1,
+    id: 1,  
     name: "Rajesh Sharma",
     specialization: "Ayurvedic Physician",
     specialties: ["Digestive Disorders", "Skin Conditions", "Stress Management"],

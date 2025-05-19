@@ -9,6 +9,7 @@ import Support from './pages/Support';
 import Terms from './pages/Terms';
 import NotFound from './pages/NotFound';
 import { AuthProvider } from './contexts/AuthContext';
+import DoctorRegistration from './pages/registration/Registeration';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/blogs" element={<HealthBlogs />} />
         <Route path="/support" element={<Support />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/registration" element={<DoctorRegistration />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </AuthProvider>
