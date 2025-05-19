@@ -26,8 +26,22 @@ const Navbar: React.FC<NavbarProps> = ({ transparent = false }) => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${getNavbarClass()}`}>
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center select-none">
-            <span className="text-2xl font-bold tracking-wide text-white font-serif drop-shadow-sm">
+          <div className="flex items-center space-x-2 select-none">
+            {/* Leaf Icon */}
+            <svg
+              className="w-7 h-7 text-green-600"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 21C12 21 4 13.5 4 8.5C4 5.46243 6.46243 3 9.5 3C11.1569 3 12.6569 3.84315 13.4645 5.12132C14.2721 3.84315 15.7721 3 17.4289 3C20.4665 3 22.9289 5.46243 22.9289 8.5C22.9289 13.5 15 21 15 21H12Z"
+              />
+            </svg>
+            <span className="text-2xl font-bold tracking-wide text-green-700 font-serif drop-shadow-sm">
               AYURDHARA
             </span>
           </div>

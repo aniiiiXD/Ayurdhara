@@ -9,7 +9,6 @@ const Footer = () => {
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="flex flex-col">
-            <Logo variant="light" />
             <p className="mt-3">
               Connecting patients with healthcare professionals for better wellness and care.
             </p>
@@ -87,22 +86,22 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <Phone size={18} className="mr-2" />
-                <span>+91 9876543210</span>
+                <span>+91 8233571228</span>
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="mr-2" />
-                <span>contact@mrhealth.com</span>
+                <span>vadyakeshavprajapati@gmail.com</span>
               </li>
-              <li className="flex items-start">
+              {/* <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1" />
-                <span>123 Healthcare Avenue, Medical District, New Delhi, India</span>
-              </li>
+                <span></span>
+              </li> */}
             </ul>
           </div>
         </div>
         
         <div className="mt-12 pt-8 border-t border-gray-800 text-sm text-center">
-          <p>© {new Date().getFullYear()} Mr Health. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Ayurdhara All rights reserved.</p>
           <p className="mt-2 flex items-center justify-center">
             Made with <Heart size={14} className="mx-1 text-red-500" /> for better healthcare
           </p>
