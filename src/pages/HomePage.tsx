@@ -22,7 +22,7 @@ const HomePage = () => {
       >
         <Navbar transparent />
         
-        <div className="container-custom px-4 sm:px-6 h-full flex flex-col justify-center items-center text-white text-center py-16 md:py-0">
+        <div className="container-custom px-4 sm:px-6 h-full flex flex-col justify-center items-center text-white text-center pt-24 pb-16 md:pt-28 md:pb-0">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 font-heading animate-fade-in">
             Welcome to <span className="text-blue-400">Ayurdhara</span> 
           </h1>
@@ -31,6 +31,7 @@ const HomePage = () => {
           </p>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 w-full max-w-5xl mt-4 sm:mt-8">
+            {/* Patient Portal */}
             <div 
               className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4 sm:p-6 lg:p-8 text-center hover:bg-opacity-20 transition-all duration-300 cursor-pointer"
               onClick={() => navigateToLogin('patient')}
@@ -49,6 +50,7 @@ const HomePage = () => {
               </Button>
             </div>
             
+            {/* Doctor Portal */}
             <div 
               className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4 sm:p-6 lg:p-8 text-center hover:bg-opacity-20 transition-all duration-300 cursor-pointer"
               onClick={() => navigateToLogin('doctor')}
@@ -67,6 +69,7 @@ const HomePage = () => {
               </Button>
             </div>
             
+            {/* Student Portal */}
             <div 
               className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4 sm:p-6 lg:p-8 text-center hover:bg-opacity-20 transition-all duration-300 cursor-pointer sm:col-span-2 md:col-span-1 mx-auto sm:mx-0 max-w-sm sm:max-w-none w-full"
               onClick={() => navigateToLogin('student')}
@@ -82,6 +85,27 @@ const HomePage = () => {
                 className="w-full bg-blue-500 hover:bg-blue-600 text-white text-sm sm:text-base py-2"
               >
                 Student Login
+              </Button>
+            </div>
+
+            {/* Doctor Registration */}
+            <div
+              className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4 sm:p-6 lg:p-8 text-center hover:bg-opacity-20 transition-all duration-300 cursor-pointer sm:col-span-2 md:col-span-1 mx-auto sm:mx-0 max-w-sm sm:max-w-none w-full"
+              onClick={() => navigate('/registration')}
+            >
+              <div className="flex justify-center mb-3 sm:mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="text-purple-400 h-9 w-9 sm:h-12 sm:w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2zm0 2c-2.21 0-4 1.79-4 4v1h8v-1c0-2.21-1.79-4-4-4z" />
+                </svg>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3">Doctor Registration</h3>
+              <p className="mb-3 sm:mb-4 text-sm sm:text-base">Join as a new doctor and offer your expertise to patients.</p>
+              <Button
+                variant="outline"
+                onClick={e => { e.stopPropagation(); navigate('/registration'); }}
+                className="w-full bg-purple-500 hover:bg-purple-600 text-white text-sm sm:text-base py-2"
+              >
+                Register as Doctor
               </Button>
             </div>
           </div>

@@ -293,7 +293,7 @@ const DoctorRegistration: React.FC = () => {
               {/* Profile Image */}
               <div className="col-span-2">
                 <label htmlFor="image" className="block text-sm font-medium text-gray-700 mb-1">
-                  Profile Image
+                  Profile Image Link
                 </label>
                 <div className="flex items-center space-x-6">
                   <div className="flex-shrink-0">
@@ -311,20 +311,16 @@ const DoctorRegistration: React.FC = () => {
                   </div>
                   <div className="flex-grow">
                     <input
-                      type="file"
+                      type="text"
                       id="image"
-                      accept="image/*"
-                      onChange={handleImageUpload}
-                      className="hidden"
+                      name="image"
+                      value={formData.image}
+                      onChange={handleChange}
+                      className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      placeholder="Paste image URL here"
                     />
-                    <label
-                      htmlFor="image"
-                      className="px-4 py-2 bg-gray-200 text-gray-700 rounded-md cursor-pointer hover:bg-gray-300 transition-colors inline-block"
-                    >
-                      Choose file
-                    </label>
                     <p className="mt-1 text-sm text-gray-500">
-                      JPG, PNG or GIF up to 2MB
+                      Paste a direct link to a JPG, PNG, or GIF image
                     </p>
                   </div>
                 </div>
